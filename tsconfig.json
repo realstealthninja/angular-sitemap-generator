@@ -12,11 +12,13 @@
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
-    "module": "CommonJS",
-    "baseUrl": "../../src"
+    "module": "ES2022",
+    "paths": [
+      "*": ["../../src"]
+    ]
   },
   "include": [
     "./generator.ts",
